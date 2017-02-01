@@ -486,9 +486,11 @@ UI.evtSelect = function(e){
  * 设置下一位出牌者
  */
 UI.setNextUser = function(){
+	console.log('setNextUser');
 	var cIndex = curUser.index;
 	cIndex = ++cIndex>2?0:cIndex;
 	curUser = users[cIndex];
+	console.log('setNextUser: ' + cIndex + ',' + curUser);
 	this.setCurUser(cIndex);
 }
 
