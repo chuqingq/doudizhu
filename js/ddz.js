@@ -1019,7 +1019,8 @@ mix(AI,{
 
 		var index = num -1;
 		if(!tCards[index]){
-			throw new Error('AI.get:没有tCards[index]');
+			console.log('!!!AI.get:没有tCards[index]: ', tCards, index)
+			// throw new Error('AI.get:没有tCards[index]: ' + index);
 			return false;
 		}
 
